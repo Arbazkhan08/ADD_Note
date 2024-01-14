@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 0, 247);
+}
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 9px;
+    margin-left: 15px;
+    font-size: 32px;
+    background-color: rgb(255, 255, 255);
+    width:230px;
+    border-radius: 5px;
+}
+h1:hover{
+    transition: 0.1s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:258px){
+    h1{
+        font-size: 18px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       width: fit-content;
+
+    }
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.notes{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin: 15px;
+    margin-top: 65px;
+}
+
+.tool{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+#addbtn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: black;
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#addbtn:hover{
+    transition: 0.1s;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width:340px){
+    #addbtn{
+        right: 10px;
+        top: 50px;
+        background-color: black;
+        color: white;
+        border: 0;
+        outline: 0;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+} 
+.notes textarea{
+    border: none;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight:bold;
+}
+.notes textarea:focus{
+    border: 0;
+    outline: 0;
+}
